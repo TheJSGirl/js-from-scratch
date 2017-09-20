@@ -31,3 +31,9 @@ for(let i of allMemberNames){
     i.innerHTML = "Not Bob"
   }
 }
+
+//query selector
+// const myDiv = document.getElementsByTagName("div");
+const myDiv = document.querySelector("div");
+
+myDiv.style.color = "green";
