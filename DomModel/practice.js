@@ -5,3 +5,9 @@ const myTag = document.getElementsByTagName("p");
 console.log(myTag[1].innerHTML);
 console.log(myTag);
 console.log(myTag[0].innerHTML= "Hello guyz... I am Anshika ");
+
+const allSpan = document.getElementsByTagName("span");
+
+for(const prop of allSpan){
+  prop.innerHTML = "somebody";
+}
