@@ -11,3 +11,7 @@ const allSpan = document.getElementsByTagName("span");
 for(const prop of allSpan){
   prop.innerHTML = "somebody";
 }
+
+
+const id = document.getElementById("identifier");
+id.innerHTML = allSpan.length;
