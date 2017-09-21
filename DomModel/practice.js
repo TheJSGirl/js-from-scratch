@@ -21,7 +21,6 @@
 const members = document.getElementById("member");
 
 const allMemberNames = document.getElementsByTagName('LI');
-
 console.log(allMemberNames);
 
 // allMemberNames[3].innerHTML = "Not BOB";
@@ -45,3 +44,8 @@ const dummy = document.querySelectorAll(".dummy ");
 for(const i of dummy){
   i.style.color = "purple";
 }
+
+const purpleDiv = document.querySelectorAll(".purple");
+purpleDiv.style.backgroundColor = "teal";
+purpleDiv.style.height = "100px";
+purpleDiv.style.width  = "100px";
