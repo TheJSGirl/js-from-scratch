@@ -37,3 +37,11 @@ for(let i of allMemberNames){
 const myDiv = document.querySelector("div");
 
 myDiv.style.color = "green";
+
+
+//querySelctorAll
+const dummy = document.querySelectorAll(".dummy ");
+
+for(const i of dummy){
+  i.style.color = "purple";
+}
