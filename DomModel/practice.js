@@ -65,3 +65,9 @@ console.log(newElement.innerHTML=" hello guyz I am code hunk");
 creation.appendChild(newElement);
 newElement.appendChild(ulElement);
 // ulElement.appendChild(liElement);
+
+for(const prop of ulElement.childNodes){
+  if(prop.innerText === 'chocolate'){
+    ulElement.removeChild(prop);
+  }
+}
