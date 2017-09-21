@@ -66,8 +66,17 @@ creation.appendChild(newElement);
 newElement.appendChild(ulElement);
 // ulElement.appendChild(liElement);
 
-for(const prop of ulElement.childNodes){
-  if(prop.innerText === 'chocolate'){
+// for(const prop of ulElement.childNodes){
+//   if(prop.innerText === 'chocolate'){
+//     ulElement.removeChild(prop);
+//   }
+// }
+
+function removeFlaours(t){
+  for(const prop of ulElement.childNodes){
+  if(prop.innerText === t){
     ulElement.removeChild(prop);
   }
+}
+removeFlaours("vanilla");
 }
