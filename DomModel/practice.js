@@ -49,7 +49,19 @@ purpleDiv.style.backgroundColor = "teal";
 purpleDiv.style.height = "100px";
 purpleDiv.style.width  = "100px";
 
-const creation = document.getElementById("created");
-const newElement = document.createElement("P");
+
+const myFavList = ['vanilla', 'chocolate', 'butterScotch', 'current', 'nuts' ];
+const creation  = document.getElementById("created");
+const newElement= document.createElement("P");
+const ulElement = document.createElement("UL");
+// liElement.innerText = myFavList[0];
+
+for(let i =0; i < myFavList.length; i++ ){
+    const liElement = document.createElement("LI");
+    liElement.innerText = myFavList[i];
+    ulElement.appendChild(liElement);
+  }
 console.log(newElement.innerHTML=" hello guyz I am code hunk");
 creation.appendChild(newElement);
+newElement.appendChild(ulElement);
+// ulElement.appendChild(liElement);
