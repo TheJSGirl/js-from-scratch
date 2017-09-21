@@ -41,11 +41,15 @@ myDiv.style.color = "green";
 //querySelctorAll
 const dummy = document.querySelectorAll(".dummy ");
 
-for(const i of dummy){
-  i.style.color = "purple";
-}
-
-const purpleDiv = document.querySelectorAll(".purple");
+// for(const i of dummy){
+//   i.style.color = "purple";
+// }
+const purpleDiv = document.querySelector(".purple");
 purpleDiv.style.backgroundColor = "teal";
 purpleDiv.style.height = "100px";
 purpleDiv.style.width  = "100px";
+
+const creation = document.getElementById("created");
+const newElement = document.createElement("P");
+console.log(newElement.innerHTML=" hello guyz I am code hunk");
+creation.appendChild(newElement);
